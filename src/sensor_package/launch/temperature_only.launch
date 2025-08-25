@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Single Temperature Sensor for Testing -->
+  <node name="temperature_sensor" pkg="sensor_package" type="temperature_sensor.py" output="screen">
+    <param name="publish_rate" value="1.0"/>
+    <param name="sensor_frame" value="test_temp_frame"/>
+    <param name="min_temp" value="20.0"/>
+    <param name="max_temp" value="25.0"/>
+    <param name="noise_level" value="0.1"/>
+  </node>
+</launch>
