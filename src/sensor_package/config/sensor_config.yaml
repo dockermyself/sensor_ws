@@ -1,0 +1,37 @@
+# Sensor Configuration
+sensor_config:
+  temperature:
+    publish_rate: 2.0
+    sensor_frame: "temperature_sensor"
+    min_temp: 15.0
+    max_temp: 35.0
+    noise_level: 0.5
+    units: "celsius"
+    
+  humidity:
+    publish_rate: 2.0
+    sensor_frame: "humidity_sensor"
+    min_humidity: 30.0
+    max_humidity: 80.0
+    noise_level: 2.0
+    units: "percent"
+    
+  manager:
+    publish_rate: 1.0
+    sensor_timeout: 5.0
+    comfort_calculation: true
+    dew_point_calculation: true
+    
+# Alert thresholds
+alerts:
+  temperature:
+    high_threshold: 30.0
+    low_threshold: 18.0
+    critical_high: 35.0
+    critical_low: 10.0
+    
+  humidity:
+    high_threshold: 75.0
+    low_threshold: 35.0
+    critical_high: 90.0
+    critical_low: 20.0

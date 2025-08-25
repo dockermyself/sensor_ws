@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Single Humidity Sensor for Testing -->
+  <node name="humidity_sensor" pkg="sensor_package" type="humidity_sensor.py" output="screen">
+    <param name="publish_rate" value="1.0"/>
+    <param name="sensor_frame" value="test_humidity_frame"/>
+    <param name="min_humidity" value="45.0"/>
+    <param name="max_humidity" value="65.0"/>
+    <param name="noise_level" value="1.0"/>
+  </node>
+</launch>

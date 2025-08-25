@@ -1,0 +1,57 @@
+# ROS workspace build artifacts
+build/
+devel/
+install/
+logs/
+
+# ROS generated files
+*.bag
+*.orig
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Python
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Backup files
+*.bak
+*.backup
+
+# Log files
+*.log
